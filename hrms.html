@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>HRMS</title>
+   <!--for including Character set-->
+   <meta charset="utf-8">
+   <!--for english Language-->
+   <meta lang="en">
+   <!--Area of the window to make it responsive--->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--making it compatible in Internet Explorer Edge-->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--for the icon on tab of browser-->
+   <link rel="icon" href="images/hrms.svg">
+ </head>
+ <body>
+<!--Header Begins-->
+   <header class="header">
+<!--Navigation Bar-->
+     <div class="navigation-bar">
+       <nav class="navigation-bar">
+         <ul class="menu-list">
+           <li class="logo">
+             <a href="#" title="Argil DX"><img src="images/argil-dx.png" alt="Argil DX"></a>
+           </li>
+           <li class="">
+             <a href="#" title="Manager View"><img src="images/layer-14.jpg">Switch to Manager View</a>
+           </li>
+           <li>
+             <a href="#" title="Notifications"><img src="images/bell.svg" alt="Notifications"></a>
+           </li>
+           <li>
+             <a href="#" title="Settings"><img src="images/settings.svg" alt="Settings"></a>
+           </li>
+           <li>
+             <a href="#" title="Profile"><img src="images/user.svg" alt="Profile"></a>
+           </li>
+         </ul>
+       </nav>
+     </div>
+<!------------->
+     <div class="dashboard">
+       <h2>Dashboard</h2>
+     </div>
+<!--Submit Button-->
+     <div class="submit-button">
+       <a herf="#" title="Submit Timesheet">
+         <button>
+           <img src="images/layer-4.png">
+           Submit Timesheet
+         </button>
+       </a>
+     </div>
+<!------------->
+   </header>
+<!-------------->
+    <main class="container">
+<!--Project Section Started-->
+      <section class="project-bar">
+         <div class="project1">
+           <img src="images/layer-6.png" title="Number of Projects">
+           <span>
+             <strong>04</strong>
+             Projects
+           </span>
+           <hr>
+           <img src="images/layer-5.png">
+           <span>
+             <strong>37</strong>
+             Hours Spent this Week
+           </span>
+         </div>
+         <div class="project2">
+           <img src="images/group-5.png">
+           <span>
+             <strong>Projects</strong>
+             worked on this Week
+           </span>
+            <div class="projects-progress-bar">
+              <!--progress bar-->
+            </div>
+         </div>
+       </section>
+<!------------>
+
+<!--My Notification Aside-->
+      <aside class="notification">
+        <div class="notification">
+          <p>My Notification</p>
+        </div>
+        <div class="notification-row">
+          <input type="checkbox" id="one">
+          <label for="one">
+            Submit Timesheet
+          </label>
+          <p>To:Ankur Mittal<p>
+          <badge class="due-today">Due Today</badge>
+        </div>
+        <div class="notification-row">
+          <input type="checkbox" id="two">
+          <label for="two">
+            Approve Timesheet
+          </label>
+          <p>Emp Name-Rohan Vora<p>
+          <badge class="due2days">Due in 2 Days</badge>
+        </div>
+        <div class="notification-row">
+          <input type="checkbox" id="three">
+          <label for="three">
+            Approve Timesheet
+          </label>
+          <p>Emp Name-Ammar Naseem<p>
+          <badge class="due2days">Due in 2 Days</badge>
+        </div>
+        <div class="notification-row">
+          <input type="checkbox" id="four">
+          <label for="four">
+            Approve Timesheet
+          </label>
+          <p>Emp Name-Sidharth<p>
+          <badge class="due2days">Due in 2 Days</badge>
+        </div>
+        <div class="notification-row">
+          <input type="checkbox" id="five" checked>
+          <strike>
+            <label for="five">
+              Approve Timesheet
+            </label>
+            <p>Emp Name-Pranjal<p>
+          </strike>
+          <badge class="done">Done</badge>
+        </div>
+        <div class="message">
+          <img src="images/layer-9.png">
+          <strong>Congratulaion</strong>
+          <img src="images/layer-10.png">
+          <p>You have completed Tasks Last Week.</p>
+        </div>
+      </aside>
+<!----------------->
+      <section class="timesheet">
+        <div>
+          <h3>Timesheet</h3>
+        </div>
+        <div>
+          <select class="view_drop">
+            <option>Day View</option>
+            <option>Month View</option>
+            <option>Year view</option>
+          </select>
+        </div>
+        <div>
+          <input type="search" id="seach_box">
+        </div>
+        <div>
+          <button>
+            <img src="images/layer-13.png">Add Task
+          </button>
+        </div>
+          <p>
+            Today&apos;s Timesheet(3)
+          </p>
+          <p>
+            5<sup>th</sup>Feb, 2019
+          </p>
+        <div class="timesheet-row">
+          <p>Bajaj Finance</p>
+          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for Bajaj Finance.</p>
+          <span>Time Spent</span>
+          <span><img src="images/layer-12.png">04:00 pm - 07:00 pm</span>
+          <img src="images/edit.png" title="Edit">
+          <img src="images/circle.png" title="About">
+        </div>
+        <div class="timesheet-row">
+          <p>Bright House Finance</p>
+          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for BHF.</p>
+          <span>Time Spent</span>
+          <span><img src="images/layer-12.png">01:00 pm - 04:00 pm</span>
+          <img src="images/edit.png" title="Edit">
+          <img src="images/circle.png" title="About">
+        </div>
+        <div class="timesheet-row">
+          <p>Inernal Projects</p>
+          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for Inernal Projects.</p>
+          <span>Time Spent</span>
+          <span><img src="images/layer-12.png">09:00 am - 12:00 pm</span>
+          <img src="images/edit.png" title="Edit">
+          <img src="images/circle.png" title="About">
+        </div>
+        <p>
+          Yesterday&apos;s Timesheet(3)
+        </p>
+        <p>
+          4<sup>th</sup>Feb, 2019
+        </p>
+        <div class="timesheet-row">
+          <p>C&amp;En</p>
+          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for C&amp;En.</p>
+          <span>Time Spent</span>
+          <span><img src="images/layer-12.png">04:00 pm - 07:00 pm</span>
+          <img src="images/edit.png" title="Edit">
+          <img src="images/circle.png" title="About">
+        </div>
+      </section>
+   </main>
+<!----------------->
+
+<!--footer-->
+   <footer class="footer">
+
+   </footer>
+<!----------->
+ </body>
+</html>
