@@ -13,194 +13,298 @@
    <!--for the icon on tab of browser-->
    <link rel="icon" href="images/hrms.svg">
  </head>
- <body>
-<!--Header Begins-->
-   <header class="header">
+ <body class="home">
 <!--Navigation Bar-->
-     <div class="navigation-bar">
-       <nav class="navigation-bar">
-         <ul class="menu-list">
-           <li class="logo">
-             <a href="#" title="Argil DX"><img src="images/argil-dx.png" alt="Argil DX"></a>
-           </li>
-           <li class="">
-             <a href="#" title="Manager View"><img src="images/layer-14.jpg">Switch to Manager View</a>
-           </li>
-           <li>
-             <a href="#" title="Notifications"><img src="images/bell.svg" alt="Notifications"></a>
-           </li>
-           <li>
-             <a href="#" title="Settings"><img src="images/settings.svg" alt="Settings"></a>
-           </li>
-           <li>
-             <a href="#" title="Profile"><img src="images/user.svg" alt="Profile"></a>
-           </li>
-         </ul>
-       </nav>
-     </div>
+  <nav class="navigation-bar">
+    <ul class="menu-list">
+      <li class="argil-dx-icon">
+        <a href="#" title="Argil DX" class="argil-dx-link">
+          <img src="images/argil-dx.png" class="argil-dx-icon" alt="Argil DX">
+        </a>
+      </li>
+      <li class="manager-view">
+        <a href="#" title="Manager View" class="manager-view-link">
+          <img src="images/layer-14.jpg" class="manager-view-icon" alt="Manager View">
+            Switch to Manager View
+        </a>
+      </li>
+      <li class="notificaion">
+        <a href="#" title="Notifications" class="bell-link">
+          <img src="images/bell.svg" alt="Notifications" class="bell-icon">
+        </a>
+      </li>
+      <li class="settings">
+        <a href="#" title="Settings" class="settings-link">
+          <img src="images/settings.svg" alt="Settings" class="settings-icon">
+        </a>
+      </li>
+      <li class="user">
+        <a href="#" title="Profile" class="user-link">
+          <img src="images/user.svg" alt="Profile" class="user-icon">
+        </a>
+      </li>
+    </ul>
+  </nav>
 <!------------->
-     <div class="dashboard">
-       <h2>Dashboard</h2>
-     </div>
+<!--Header Begins-->
+  <header class="header">
+    <section class="dashboard-bar">
+      <div class="dashboard">
+        <h2 class="heading">
+          Dashboard
+        </h2>
+      </div>
 <!--Submit Button-->
-     <div class="submit-button">
-       <a herf="#" title="Submit Timesheet">
-         <button>
-           <img src="images/layer-4.png">
-           Submit Timesheet
-         </button>
-       </a>
-     </div>
-<!------------->
-   </header>
+      <div class="submit-button">
+        <a herf="#" title="submit-timesheet" class="submit-link">
+          <button>
+            <img src="images/layer-4.png" class="submit-icon" />
+              Submit Timesheet
+          </button>
+        </a>
+      </div>
+    </section>
+  </header>
 <!-------------->
-    <main class="container">
+
+<!--Main-->
+  <main class="container">
 <!--Project Section Started-->
-      <section class="project-bar">
-         <div class="project1">
-           <img src="images/layer-6.png" title="Number of Projects">
-           <span>
-             <strong>04</strong>
+    <section class="project-section">
+<!--Article strated-->
+      <article class="project-col1">
+        <div class="project-row1">
+          <img src="images/layer-6.png" title="Number of Projects">
+           <span class="proj-number">
+             <strong class="project-number">04</strong>
              Projects
            </span>
-           <hr>
-           <img src="images/layer-5.png">
-           <span>
-             <strong>37</strong>
-             Hours Spent this Week
-           </span>
          </div>
-         <div class="project2">
-           <img src="images/group-5.png">
-           <span>
-             <strong>Projects</strong>
-             worked on this Week
-           </span>
-            <div class="projects-progress-bar">
-              <!--progress bar-->
+         <div class="project-row2">
+           <img src="images/layer-5.png" class="img-champ" alt="champ" />
+            <span class="hrs-proj">
+              Champions
+            </span>
+            <div class="cham-progress">
+              <span class="desc-champ">80 points to Legend</span>
             </div>
          </div>
-       </section>
+       </article>
+<!-------->
+        <article class="project-col2">
+         <div class="project-head">
+           <img src="images/group-5.png" class="proj-icon" alt="Projects">
+           <span class="project-heading">
+             <strong>
+               Projects
+             </strong>
+           </span>
+           <span class="about-proj">
+             Worked on from
+           </span>
+           <span class="project-duration">
+             11 Feb to 15 Feb
+           </span>
+         </div>
+         <div class="projects-progress-bar">
+            <!--progress bar-->
+          </div>
+        </section>
 <!------------>
 
 <!--My Notification Aside-->
       <aside class="notification">
         <div class="notification">
-          <p>My Notification</p>
+          My Notification
         </div>
         <div class="notification-row">
-          <input type="checkbox" id="one">
+          <input type="checkbox" class="one">
           <label for="one">
             Submit Timesheet
           </label>
-          <p>To:Ankur Mittal<p>
+          <div class="Emp-name">
+            To:Ankur Mittal
+          </div>
           <badge class="due-today">Due Today</badge>
         </div>
         <div class="notification-row">
-          <input type="checkbox" id="two">
+          <input type="checkbox" class="two">
           <label for="two">
             Approve Timesheet
           </label>
-          <p>Emp Name-Rohan Vora<p>
+          <div class="Emp-name">
+            Emp Name-Rohan Vora
+          </div>
           <badge class="due2days">Due in 2 Days</badge>
         </div>
         <div class="notification-row">
-          <input type="checkbox" id="three">
+          <input type="checkbox" class="three">
           <label for="three">
             Approve Timesheet
           </label>
-          <p>Emp Name-Ammar Naseem<p>
+          <div class="Emp-name">
+            Emp Name-Ammar Naseem
+          </div>
           <badge class="due2days">Due in 2 Days</badge>
         </div>
         <div class="notification-row">
-          <input type="checkbox" id="four">
+          <input type="checkbox" class="four">
           <label for="four">
             Approve Timesheet
           </label>
-          <p>Emp Name-Sidharth<p>
+          <div class="Emp-name">
+            Emp Name-Sidharth
+          </div>
           <badge class="due2days">Due in 2 Days</badge>
         </div>
         <div class="notification-row">
-          <input type="checkbox" id="five" checked>
-          <strike>
+          <input type="checkbox" class="five" checked>
             <label for="five">
               Approve Timesheet
             </label>
-            <p>Emp Name-Pranjal<p>
-          </strike>
+            <div class="Emp-name">
+              Emp Name-Pranjal
+            </div>
           <badge class="done">Done</badge>
         </div>
         <div class="message">
-          <img src="images/layer-9.png">
-          <strong>Congratulaion</strong>
-          <img src="images/layer-10.png">
-          <p>You have completed Tasks Last Week.</p>
+          <span  class="msg">
+            Congratulaion
+          </span>
+          <div class="msg-desc">
+            You have completed Tasks Last Week.
+          </div>
         </div>
       </aside>
 <!----------------->
       <section class="timesheet">
-        <div>
-          <h3>Timesheet</h3>
-        </div>
-        <div>
-          <select class="view_drop">
-            <option>Day View</option>
-            <option>Month View</option>
-            <option>Year view</option>
-          </select>
-        </div>
-        <div>
-          <input type="search" id="seach_box">
-        </div>
-        <div>
-          <button>
-            <img src="images/layer-13.png">Add Task
-          </button>
-        </div>
-          <p>
+        <article class="timesheet-main">
+          <div class="timesheet-heading">
+            <h3>Timesheet</h3>
+          </div>
+          <div class="drop-down">
+            <select class="view_drop">
+              <option class="day">
+                Day View
+              </option>
+              <option class="month">
+                Month View
+              </option>
+              <option class="year">
+                Year view
+              </option>
+            </select>
+          </div>
+          <div  class="search-box">
+            <input type="search" class="seach_box">
+          </div>
+          <div class="add-task">
+            <button class="add-button">
+              <img src="images/layer-13.png" class="add_task" />
+                Add Task
+            </button>
+          </div>
+        </article>
+        <div class="timesheet-day">
             Today&apos;s Timesheet(3)
-          </p>
-          <p>
+        </div>
+        <div class="timesheet-date">
             5<sup>th</sup>Feb, 2019
-          </p>
-        <div class="timesheet-row">
-          <p>Bajaj Finance</p>
-          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for Bajaj Finance.</p>
-          <span>Time Spent</span>
-          <span><img src="images/layer-12.png">04:00 pm - 07:00 pm</span>
-          <img src="images/edit.png" title="Edit">
-          <img src="images/circle.png" title="About">
         </div>
-        <div class="timesheet-row">
-          <p>Bright House Finance</p>
-          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for BHF.</p>
-          <span>Time Spent</span>
-          <span><img src="images/layer-12.png">01:00 pm - 04:00 pm</span>
-          <img src="images/edit.png" title="Edit">
-          <img src="images/circle.png" title="About">
-        </div>
-        <div class="timesheet-row">
-          <p>Inernal Projects</p>
-          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for Inernal Projects.</p>
-          <span>Time Spent</span>
-          <span><img src="images/layer-12.png">09:00 am - 12:00 pm</span>
-          <img src="images/edit.png" title="Edit">
-          <img src="images/circle.png" title="About">
-        </div>
-        <p>
+        <article class="timesheet-row">
+          <div class="proj-name">
+            Bajaj Finance
+          </div>
+          <div class="proj-desc">
+            <img src="images/desc.png" class="desc-icon" />
+            Working on Redesigning the UX of Loan providing platform for Bajaj Finance.
+          </div>
+          <span class="time-head">
+            Time Spent
+          </span>
+          <span class="time">
+            <img src="images/layer-12.png" class="time-icon" />
+            04:00 pm - 07:00 pm
+          </span>
+          <span class="edit">
+            <img src="images/edit.png" title="Edit" class="edit-icon" />
+          </span>
+          <span class="about-icon">
+            <img src="images/circle.png" title="About" class="about-icon" />
+          </span>
+        </article>
+        <article class="timesheet-row">
+          <div class="proj-name">
+            Bright House Finance
+          </div>
+          <div class="proj-desc">
+            <img src="images/desc.png" class="desc-icon" />
+            Working on Redesigning the UX of Loan providing platform for BHF.
+          </div>
+          <span class="time-head">
+            Time Spent
+          </span>
+          <span class="time">
+            <img src="images/layer-12.png" class="time-icon" />
+            04:00 pm - 07:00 pm
+          </span>
+          <span class="edit">
+            <img src="images/edit.png" title="Edit" class="edit-icon" />
+          </span>
+          <span class="about-icon">
+            <img src="images/circle.png" title="About" class="about-icon" />
+          </span>
+        </article>
+        <article class="timesheet-row">
+          <div class="proj-name">
+            Inernal Projects
+          </div>
+          <div class="proj-desc">
+            <img src="images/desc.png" class="desc-icon" />
+            Working on Redesigning the UX of Loan providing platform for Inernal Projects.
+          </div>
+          <span class="time-head">
+            Time Spent
+          </span>
+          <span class="time">
+            <img src="images/layer-12.png" class="time-icon" />
+            04:00 pm - 07:00 pm
+          </span>
+          <span class="edit">
+            <img src="images/edit.png" title="Edit" class="edit-icon" />
+          </span>
+          <span class="about-icon">
+            <img src="images/circle.png" title="About" class="about-icon" />
+          </span>
+        </article>
+        <div class="timesheet-day">
           Yesterday&apos;s Timesheet(3)
-        </p>
-        <p>
-          4<sup>th</sup>Feb, 2019
-        </p>
-        <div class="timesheet-row">
-          <p>C&amp;En</p>
-          <p><img src="images/desc.png">Working on Redesigning the UX of Loan providing platform for C&amp;En.</p>
-          <span>Time Spent</span>
-          <span><img src="images/layer-12.png">04:00 pm - 07:00 pm</span>
-          <img src="images/edit.png" title="Edit">
-          <img src="images/circle.png" title="About">
         </div>
+        <div class="timesheet-date">
+          4<sup>th</sup>Feb, 2019
+        </div>
+        <article class="timesheet-row">
+          <div class="proj-name">
+            C&amp;En
+          </div>
+          <div class="proj-desc">
+            <img src="images/desc.png" class="desc-icon" />
+            Working on Redesigning the UX of Loan providing platform for C&amp;En.
+          </div>
+          <span class="time-head">
+            Time Spent
+          </span>
+          <span class="time">
+            <img src="images/layer-12.png" class="time-icon" />
+            04:00 pm - 07:00 pm
+          </span>
+          <span class="edit">
+            <img src="images/edit.png" title="Edit" class="edit-icon" />
+          </span>
+          <span class="about-icon">
+            <img src="images/circle.png" title="About" class="about-icon" />
+          </span>
+        </article>
       </section>
    </main>
 <!----------------->
