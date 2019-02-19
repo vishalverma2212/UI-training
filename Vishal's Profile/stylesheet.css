@@ -1,0 +1,58 @@
+.home{
+background-color: #d5f5e3;
+}
+.heading{
+  background-color: #edbb99;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+}
+.list-item{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.menu-list{
+  display: table;
+  width:95%;
+  list-style: none;
+}
+.container
+{
+  background-color: #e8daef;
+}
+.inner-head{
+  background-color:  #d5dbdb;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.in-head ,.project-head ,.skill-row-head{
+  font-size: 18px;
+  font-weight: bold;
+}
+#about ,#education ,#project , #skill-article , #activity-article{
+  text-align: center;
+}
+.mail-link ,.phone-link{
+  text-decoration: none;
+  color: black;
+}
+.mail-link:hover ,.phone-link:hover ,.link:hover{
+  text-decoration: underline;
+  color: blue;
+}
+.time{
+  text-align: right;
+}
+.qualification-table{
+  width:100%;
+}
+.image{
+  width:150px;
+  height:200px;
+}

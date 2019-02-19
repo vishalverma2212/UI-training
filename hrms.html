@@ -12,33 +12,37 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <!--for the icon on tab of browser-->
    <link rel="icon" href="images/hrms.svg">
+   <!--Link StyleSheet-->
+   <link rel="stylesheet" href="stylesheet.css">
  </head>
  <body class="home">
 <!--Navigation Bar-->
   <nav class="navigation-bar">
+    <div class="argil-dx-icon">
+      <a href="#" title="Argil DX" class="argil-dx-link">
+        <img src="images/argil-dx.png" class="argildx-icon" alt="Argil DX">
+      </a>
+    </div>
     <ul class="menu-list">
-      <li class="argil-dx-icon">
-        <a href="#" title="Argil DX" class="argil-dx-link">
-          <img src="images/argil-dx.png" class="argil-dx-icon" alt="Argil DX">
-        </a>
-      </li>
-      <li class="manager-view">
+      <li class="list-item">
         <a href="#" title="Manager View" class="manager-view-link">
           <img src="images/layer-14.jpg" class="manager-view-icon" alt="Manager View">
-            Switch to Manager View
+            <span class="manager-view-text">
+              Switch to Manager View
+            </span>
         </a>
       </li>
-      <li class="notificaion">
+      <li class="list-item">
         <a href="#" title="Notifications" class="bell-link">
           <img src="images/bell.svg" alt="Notifications" class="bell-icon">
         </a>
       </li>
-      <li class="settings">
+      <li class="list-item">
         <a href="#" title="Settings" class="settings-link">
           <img src="images/settings.svg" alt="Settings" class="settings-icon">
         </a>
       </li>
-      <li class="user">
+      <li class="list-item">
         <a href="#" title="Profile" class="user-link">
           <img src="images/user.svg" alt="Profile" class="user-icon">
         </a>
@@ -48,22 +52,18 @@
 <!------------->
 <!--Header Begins-->
   <header class="header">
-    <section class="dashboard-bar">
-      <div class="dashboard">
-        <h2 class="heading">
+      <div class="heading">
           Dashboard
-        </h2>
       </div>
 <!--Submit Button-->
       <div class="submit-button">
         <a herf="#" title="submit-timesheet" class="submit-link">
-          <button>
+          <button class="submit">
             <img src="images/layer-4.png" class="submit-icon" />
               Submit Timesheet
           </button>
         </a>
       </div>
-    </section>
   </header>
 <!-------------->
 
@@ -74,15 +74,17 @@
 <!--Article strated-->
       <article class="project-col1">
         <div class="project-row1">
-          <img src="images/layer-6.png" title="Number of Projects">
+          <img src="images/layer-6.png" title="Number of Projects" class="proj-icon">
            <span class="proj-number">
-             <strong class="project-number">04</strong>
+             04
+           </span>
+           <span class="proj">
              Projects
            </span>
          </div>
          <div class="project-row2">
            <img src="images/layer-5.png" class="img-champ" alt="champ" />
-            <span class="hrs-proj">
+            <span class="level">
               Champions
             </span>
             <div class="cham-progress">
@@ -93,11 +95,9 @@
 <!-------->
         <article class="project-col2">
          <div class="project-head">
-           <img src="images/group-5.png" class="proj-icon" alt="Projects">
+           <img src="images/group-5.png" class="proj-icon1" alt="Projects">
            <span class="project-heading">
-             <strong>
                Projects
-             </strong>
            </span>
            <span class="about-proj">
              Worked on from
@@ -114,65 +114,85 @@
 
 <!--My Notification Aside-->
       <aside class="notification">
-        <div class="notification">
+        <div class="notification-head">
           My Notification
         </div>
         <div class="notification-row">
           <input type="checkbox" class="one">
           <label for="one">
-            Submit Timesheet
+            <span class="task">
+              Submit Timesheet
+            </span>
           </label>
           <div class="Emp-name">
             To:Ankur Mittal
           </div>
-          <badge class="due-today">Due Today</badge>
+          <div class="due-today">
+            Due Today
+          </div>
         </div>
         <div class="notification-row">
           <input type="checkbox" class="two">
           <label for="two">
-            Approve Timesheet
+            <span class="task">
+              Approve Timesheet
+            </span>
           </label>
           <div class="Emp-name">
             Emp Name-Rohan Vora
           </div>
-          <badge class="due2days">Due in 2 Days</badge>
+          <div class="due2days">
+            Due in 2 Days
+          </div>
         </div>
         <div class="notification-row">
           <input type="checkbox" class="three">
           <label for="three">
-            Approve Timesheet
+            <span class="task">
+              Approve Timesheet
+            </span>
           </label>
           <div class="Emp-name">
             Emp Name-Ammar Naseem
           </div>
-          <badge class="due2days">Due in 2 Days</badge>
+          <div class="due2days">
+            Due in 2 Days
+          </div>
         </div>
         <div class="notification-row">
           <input type="checkbox" class="four">
           <label for="four">
-            Approve Timesheet
+            <span class="task">
+              Approve Timesheet
+            </span>
           </label>
           <div class="Emp-name">
             Emp Name-Sidharth
           </div>
-          <badge class="due2days">Due in 2 Days</badge>
+          <div class="due2days">
+            Due in 2 Days
+          </div>
         </div>
         <div class="notification-row">
           <input type="checkbox" class="five" checked>
             <label for="five">
-              Approve Timesheet
+              <span class="task">
+                Approve Timesheet
+              </span>
             </label>
             <div class="Emp-name">
               Emp Name-Pranjal
             </div>
-          <badge class="done">Done</badge>
+          <div class="done">
+            Done
+          </div>
         </div>
         <div class="message">
           <span  class="msg">
             Congratulaion
           </span>
           <div class="msg-desc">
-            You have completed Tasks Last Week.
+            You have completed 9 Tasks Last Week.
           </div>
         </div>
       </aside>
@@ -180,7 +200,7 @@
       <section class="timesheet">
         <article class="timesheet-main">
           <div class="timesheet-heading">
-            <h3>Timesheet</h3>
+            Timesheet
           </div>
           <div class="drop-down">
             <select class="view_drop">
